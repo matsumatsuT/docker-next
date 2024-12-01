@@ -12,14 +12,11 @@ FROM node:20-alpine3.19
 WORKDIR /app
 
 # package.jsonとyarn.lockをコピー
-COPY ./my-app/package*.json ./my-app/yarn.lock ./
+COPY ./package*.json ./yarn.lock ./
 
 
 # 依存関係をインストール
 RUN yarn install
-
-# アプリケーションのソースコードをコピー
-# COPY ./my-app/ .
 
 # アプリケーションを実行
 CMD ["yarn", "dev"]

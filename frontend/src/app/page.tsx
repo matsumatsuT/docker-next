@@ -11,6 +11,7 @@ export default function Home() {
       <div>テスト</div>
       <div>テスト</div>
       <div style={{ color: "red" }}>テスト</div>
+      <div style={{ color: "green" }}>テスト</div>
     </div>
   );
 }
