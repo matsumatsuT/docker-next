@@ -9,6 +9,8 @@ export default function Home() {
       <div>HELLO!!</div>
       <div>HELLO!!</div>
       <div>テスト</div>
+      <div>テスト</div>
+      <div style={{ color: "red" }}>テスト</div>
     </div>
   );
 }

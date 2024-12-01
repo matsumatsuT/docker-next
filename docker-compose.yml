@@ -4,16 +4,8 @@ services:
     build: .
     container_name: docker-next-setting
     volumes:
-      - ./my-app:/usr/src/app
-      - /usr/src/app/node_modules
-      # - ./my-app:/app
-      # - /app/node_modules
+      - ./my-app:/app
+      - /app/node_modules
     ports:
       - "3000:3000" # 開発用
     command: yarn dev
-# /usr/src/appは慣例的によく使われるパスですが、任意のパスに変更可能です
-# DockerfileのWORKDIRを使用する方法が最も一般的で推奨される方法です
-# このディレクトリが存在しない状態でマウントしようとすると、エラーが発生する可能性があります
-
-# ためす
-# DockerfileのWORKDIRのパスを変更してみる
