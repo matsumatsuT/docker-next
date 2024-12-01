@@ -20,5 +20,3 @@ RUN yarn install
 
 # アプリケーションを実行
 CMD ["yarn", "dev"]
-
-
