@@ -1,10 +1,12 @@
 version: "3"
 services:
   app:
-    build: .
-    container_name: docker-next-setting
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile.frontend
+    container_name: frontend
     volumes:
-      - ./my-app:/app
+      - ./frontend:/app
       - /app/node_modules
     ports:
       - "3000:3000" # 開発用
